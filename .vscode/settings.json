@@ -1,0 +1,170 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "typescript.preferences.quoteStyle": "single",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "IDEA",
+    "OPTIMIZE",
+    "PR",
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "foreground": "#ffcc00"
+    },
+    "FIXME": {
+      "foreground": "#CB00FF"
+    },
+    "BUG": {
+      "foreground": "#ff0000"
+    },
+    "HACK": {
+      "foreground": "#F57900"
+    },
+    "IDEA": {
+      "foreground": "#729FCF"
+    },
+    "OPTIMIZE": {
+      "foreground": "#FFFFFF"
+    },
+    "PR": {
+      "icon": "question",
+      "type": "text-and-comment",
+      "foreground": "#000",
+      "background": "3fabd9",
+      "iconColour": "#3fabd9",
+      "fontWeight": "bold"
+    },
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "#24be02",
+    "type": "none"
+  },
+  "todo-tree.tree.expanded": true,
+  "todo-tree.tree.flat": true,
+  "standard.options": {
+    "parser": "babel-eslint",
+    "space-before-function-paren": false
+  },
+  "files.associations": {
+    "*.md": "markdown",
+    "*.css": "tailwindcss"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "highlight.regexes": {
+    "( )(TODO:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#ffcc00",
+        "backgroundColor": "#ffcc00",
+        "iconColor": "#ffcc00",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#ffcc00"
+      }
+    ],
+    "( )(FIXME:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#CB00FF",
+        "backgroundColor": "#CB00FF",
+        "iconColor": "#CB00FF",
+        "color": "#fff",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#F7D7FF",
+        "backgroundColor": "#5B0073"
+      }
+    ],
+    "( )(BUG:[^ \t]*)(.*)": {
+      "regexFlags": "g",
+      "decorations": [
+        {},
+        {
+          "overviewRulerColor": "#ff0000",
+          "backgroundColor": "#ff0000",
+          "iconColor": "#ff0000",
+          "color": "#fff",
+          "fontWeight": "bold"
+        },
+        {
+          "color": "#FFCCCC",
+          "backgroundColor": "#670000"
+        }
+      ]
+    },
+    "( )(HACK:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#F57900",
+        "backgroundColor": "#F57900",
+        "iconColor": "#F57900",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#F57900"
+      }
+    ],
+    "( )(IDEA:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#729FCF",
+        "backgroundColor": "#729FCF",
+        "iconColor": "#729FCF",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#729FCF"
+      }
+    ],
+    "( )(OPTIMIZE:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#FFFFFF",
+        "backgroundColor": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#FFFFFF"
+      }
+    ],
+    "( )(PR:[^ \t]*)(.*)": [
+      {},
+      {
+        "overviewRulerColor": "#FFFFFF",
+        "backgroundColor": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "color": "#FFFFFF"
+      }
+    ],
+    "(// )(@\\w+)": [
+      {},
+      {
+        "color": "#4de0ff"
+      }
+    ]
+  },
+  "files.eol": "\n",
+}
