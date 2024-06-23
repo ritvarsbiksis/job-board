@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const Header = () => (
   <header>
-    <div className="flex items-center justify-between">
+    <div className="container flex items-center justify-between my-4">
       <Link className="font-bold text-xl" href={'/'}>
         Job Board
       </Link>

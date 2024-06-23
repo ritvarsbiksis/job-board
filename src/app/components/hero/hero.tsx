@@ -1,5 +1,5 @@
 export const Hero = () => (
-  <section className="py-12">
+  <section className="container py-16">
     <h1 className="text-4xl font-bold text-center">
       Find your next
       <br />
