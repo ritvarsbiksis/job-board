@@ -1,3 +1,4 @@
+import { NEW_LISTING_ROUTE } from '@/constants/routes'
 import { getUser, getSignInUrl, signOut } from '@workos-inc/authkit-nextjs'
 import Link from 'next/link'
 
@@ -29,7 +30,7 @@ export const Header = async () => {
               </button>
             </form>
           )}
-          <Link className="rounded-md py-2 px-4 bg-blue-600 text-white" href={'/post'}>
+          <Link className="rounded-md py-2 px-4 bg-blue-600 text-white" href={NEW_LISTING_ROUTE}>
             Post a job
           </Link>
         </nav>
