@@ -1,6 +1,9 @@
-import { LoginToUse } from '@/components/login-to-use/login-to-use'
+import '@radix-ui/themes/styles.css'
 import { getUser } from '@workos-inc/authkit-nextjs'
 import { WorkOS } from '@workos-inc/node'
+
+import { JobForm } from '@/components/job-form/job-form'
+import { LoginToUse } from '@/components/login-to-use/login-to-use'
 
 interface Params {
   orgId: string
@@ -19,12 +22,5 @@ export default async function NewListingForOrganizationPage({ params }: { params
 
   if (!oms.data.length) return <div className="container">Organization doesn&lsquo;t found</div>
 
-  const [{ organizationId }] = oms.data
-
-  return (
-    <form action="" className="container mt-6">
-      {organizationId}
-      <input placeholder="job title" className="block border p-2 mt-2 rounded-md" type="tex]" />
-    </form>
-  )
+  return <JobForm />
 }
