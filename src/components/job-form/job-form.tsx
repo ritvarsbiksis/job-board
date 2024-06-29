@@ -8,6 +8,8 @@ import { useState } from 'react'
 import { CitySelect, CountrySelect, StateSelect } from 'react-country-state-city'
 import 'react-country-state-city/dist/react-country-state-city.css'
 
+import { ImageUpload } from '../image-upload/image-upload'
+
 export const JobForm = () => {
   const [countryid, setCountryid] = useState(0)
   const [stateid, setstateid] = useState(0)
@@ -69,28 +71,14 @@ export const JobForm = () => {
         </div>
         <div className="grid grid-cols-3 gap-6">
           <div>
-            <h3>Job icon</h3>
-            <div className="bg-gray-100 rounded-md size-32 inline-flex items-center justify-center content-center">
-              <FontAwesomeIcon icon={faStar} className="text-gray-400" size="2xl" />
-            </div>
-            <div className="mt-2 w-32">
-              <Button variant="soft" style={{ minWidth: '100%' }} size="3">
-                select file
-              </Button>
-            </div>
+            <h3 className="mb-2">Job icon</h3>
+            <ImageUpload name="jobIcon" icon={faStar} />
           </div>
           <div className="col-span-2">
-            <h3>Contanct person</h3>
+            <h3 className="mb-2">Contanct person</h3>
             <div className="flex gap-4">
               <div>
-                <div className="bg-gray-100 rounded-md size-32 inline-flex items-center justify-center content-center">
-                  <FontAwesomeIcon icon={faUser} className="text-gray-400" size="2xl" />
-                </div>
-                <div className="mt-2 w-32">
-                  <Button variant="soft" style={{ minWidth: '100%' }} size="3">
-                    select file
-                  </Button>
-                </div>
+                <ImageUpload name="personImage" icon={faUser} />
               </div>
               <div className="flex flex-col gap-2 grow">
                 <TextField.Root placeholder="John Doe" size="3">
